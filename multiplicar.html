@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tabla del 3</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="multiplicar.css" />
+  <script src="multiplicar.js"></script>
+</head>
+<body>
+
+  <div class="noise"></div>
+
+  <header class="header">
+    <span class="header__tag">Generador de tablas de multiplicar</span>
+    <h1 class="header__title">Tablas de <em>multiplicar</em></h1>
+    <label class="input__label" for="numeroTabla">¿De qué número quieres ver la tabla?</label>
+    <input class="input__texto" type="number" id="numeroTabla" min="1" max="100" placeholder="Escribe un número del 1 al 100" title="Ingresa un número entre 1 y 100" />
+    <a href="#tabla" class="btn" onclick="generarTablas()" title="Haz clic para ver la tabla del número que escribiste">Ver tabla →</a>
+  </header>
+
+  <section class="guia" aria-label="Instrucciones de uso">
+    <h2 class="guia__titulo">Así de fácil funciona</h2>
+    <ol class="guia__pasos">
+      <li class="guia__paso">
+        <span class="guia__num">01</span>
+        <div class="guia__info">
+          <strong class="guia__nombre">Elige tu número</strong>
+          <p class="guia__desc">Escribe cualquier número del 1 al 100 en la caja de arriba. ¡Solo números enteros!</p>
+        </div>
+      </li>
+      <li class="guia__paso">
+        <span class="guia__num">02</span>
+        <div class="guia__info">
+          <strong class="guia__nombre">Toca "Ver tabla"</strong>
+          <p class="guia__desc">Haz clic en el botón y la tabla cambiará al instante con tu número.</p>
+        </div>
+      </li>
+      <li class="guia__paso">
+        <span class="guia__num">03</span>
+        <div class="guia__info">
+          <strong class="guia__nombre">Revisa los resultados</strong>
+          <p class="guia__desc">Verás tu número multiplicado del 1 al 10, con la operación y el resultado de cada fila.</p>
+        </div>
+      </li>
+      <li class="guia__paso">
+        <span class="guia__num">04</span>
+        <div class="guia__info">
+          <strong class="guia__nombre">¡Prueba con otro!</strong>
+          <p class="guia__desc">Cambia el número y vuelve a tocar el botón. Puedes repetirlo todas las veces que quieras.</p>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <main class="main" id="tabla">
+    <table class="tabla" id="tablas">
+      <thead>
+        <tr>
+          <th colspan="3" class="tabla__titulo">Aquí aparecerá tu tabla de multiplicar</th>
+        </tr>
+        <tr>
+          <th class="tabla__th">Factor</th>
+          <th class="tabla__th">Operación</th>
+          <th class="tabla__th">Resultado</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="tabla__fila">
+          <td class="tabla__factor">1</td>
+          <td class="tabla__op">3 × 1</td>
+          <td class="tabla__res">3</td>
+        </tr>
+        <tr class="tabla__fila">
+          <td class="tabla__factor">2</td>
+          <td class="tabla__op">3 × 2</td>
+          <td class="tabla__res">6</td>
+        </tr>
+        <tr class="tabla__fila">
+          <td class="tabla__factor">3</td>
+          <td class="tabla__op">3 × 3</td>
+          <td class="tabla__res">9</td>
+        </tr>
+        <tr class="tabla__fila">
+          <td class="tabla__factor">4</td>
+          <td class="tabla__op">3 × 4</td>
+          <td class="tabla__res">12</td>
+        </tr>
+        <tr class="tabla__fila">
+          <td class="tabla__factor">5</td>
+          <td class="tabla__op">3 × 5</td>
+          <td class="tabla__res">15</td>
+        </tr>
+        <tr class="tabla__fila">
+          <td class="tabla__factor">6</td>
+          <td class="tabla__op">3 × 6</td>
+          <td class="tabla__res">18</td>
+        </tr>
+        <tr class="tabla__fila">
+          <td class="tabla__factor">7</td>
+          <td class="tabla__op">3 × 7</td>
+          <td class="tabla__res">21</td>
+        </tr>
+        <tr class="tabla__fila">
+          <td class="tabla__factor">8</td>
+          <td class="tabla__op">3 × 8</td>
+          <td class="tabla__res">24</td>
+        </tr>
+        <tr class="tabla__fila">
+          <td class="tabla__factor">9</td>
+          <td class="tabla__op">3 × 9</td>
+          <td class="tabla__res">27</td>
+        </tr>
+        <tr class="tabla__fila tabla__fila--last">
+          <td class="tabla__factor">10</td>
+          <td class="tabla__op">3 × 10</td>
+          <td class="tabla__res">30</td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+
+  <footer class="footer">
+    <p>© Oscar Tipanluisa. <br>Spixt583</p>
+  </footer>
+
+</body>
+</html>
